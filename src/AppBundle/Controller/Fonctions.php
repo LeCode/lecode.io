@@ -1,15 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Yann
- * Date: 29/01/2017
- * Time: 15:07
- */
 
 namespace AppBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
-class Fonctions
+class Fonctions extends Controller
 {
+    /**
+     * @Route("/test/{param}")
+     */
+    public function showAction($param)
+    {
+        $notes = [
+            'Coucou,',
+            'Tu veux voir ma bite ?',
+            'Nice !'
+        ];
+        return $this->render('test/show.html.twig',[
+            'name' => $param,
+            'notes' => $notes]);
 
+    }
 }

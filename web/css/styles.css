@@ -1,0 +1,15 @@
+.container .jumbotron, .container-fluid .jumbotron{
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 70px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+body{
+    background-color: black;
+    font-family: monospace;
+    color: white;
+}

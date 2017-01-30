@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% block title %}LeCode.{% endblock %}
+{% block header %}
+
+    <div class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li> <a href="#">Accueil</a> </li>
+            <li> <a href="#">L'Equipe</a> </li>
+            <li> <a href="#">Nos Projets</a> </li>
+            <li> <a href="#">Nous Contacter</a> </li>
+        </ul>
+    </div>
+    <div class="jumbotron">
+        <h1>LeCode.</h1>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="row-fluid">
+        <div class="span2">
+
+        </div>
+        <div class="span10">
+            <h1>Coucou ! {{ name }}</h1>
+            <ul>
+                {% for note in notes %}
+                    <li>{{ note }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
