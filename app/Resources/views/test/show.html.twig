@@ -2,32 +2,82 @@
 {% block title %}LeCode.{% endblock %}
 {% block header %}
 
-    <div class="navbar navbar-inverse">
-        <ul class="nav navbar-nav">
-            <li> <a href="#">Accueil</a> </li>
-            <li> <a href="#">L'Equipe</a> </li>
-            <li> <a href="#">Nos Projets</a> </li>
-            <li> <a href="#">Nous Contacter</a> </li>
-        </ul>
-    </div>
-    <div class="jumbotron">
-        <h1>LeCode.</h1>
-    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">LeCode.</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 {% endblock %}
 
 {% block body %}
-    <div class="row-fluid">
-        <div class="span2">
+    <div class="row">
+        <div class="col-md-2">
 
         </div>
-        <div class="span10">
-            <h1>Coucou ! {{ name }}</h1>
-            <ul>
-                {% for note in notes %}
-                    <li>{{ note }}</li>
-                {% endfor %}
-            </ul>
+        <div class="col-md-10">
+            <h1>Members.</h1>
+            <hr>
+            <div class="media">
+                <a class="media-left waves-light">
+                    <img class="img-circle" src="{{ asset('/images/banc.jpg')}}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Benjamin Chetioui</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <a class="media-left waves-light">
+                    <img class="img-circle" src="{{ asset('/images/julien.jpg')}}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Julien Gamba</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <a class="media-left waves-light">
+                    <img class="img-circle" src="{{ asset('/images/renaud.jpg')}}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Renaud Vanhoutrève</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                </div>
+            </div>
         </div>
     </div>
 
+
+{% endblock %}
+{% block footer %}
+    <hr>
+    <nav class="navbar navbar-default navbar-bottom footer">
+            <a class="btn btn-social-icon btn-facebook btn-pinterest btn-pinterest-fb">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn btn-social-icon btn-twitter btn-pinterest btn-pinterest-twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn btn-social-icon btn-github btn-pinterest btn-pinterest-git">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="btn btn-social-icon btn-btn-linkedin btn-pinterest btn-pinterest-linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+    </nav>
 {% endblock %}

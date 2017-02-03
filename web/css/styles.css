@@ -11,5 +11,38 @@
 body{
     background-color: black;
     font-family: monospace;
-    color: white;
+    color: white !important;
+}
+a{
+    color: #FFFFFF;
+}
+.btn-pinterest {
+    color: #ffffff;
+    border-color: black;
+    height: 45px;
+    width: 45px;
+    line-height: 40px;
+    font-size: 1.8em;
+}
+.btn-pinterest-fb{
+    background-color: #3b5998;
+}
+.btn-pinterest-twitter{
+    background-color: #55ACEE;
+}
+.btn-pinterest-git{
+    background-color: #444444;
+}
+.btn-pinterest-linkedin{
+    background-color: #007bb6;
+
+}
+.footer{
+    background-color: black;
+    text-align: right;
+    border-color: transparent;
+}
+
+.img-circle{
+    max-width: 100px;
 }
